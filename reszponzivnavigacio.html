@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="hu">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nagy Ádám oldala</title>
+            <style>
+                body 
+                {
+                    margin: 0;
+                    font-family: "Lato", sans-serif;
+                }
+                
+                .sidebar 
+                {
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: gray;
+                    position: fixed;
+                    height: 100%;
+                    overflow: auto;
+                }
+                
+                .sidebar a 
+                {
+                    display: block;
+                    color: black;
+                    padding: 16px;
+                    text-decoration: none;
+                }
+                
+                .sidebar a.active 
+                {
+                    background-color: rgb(255, 0, 0);
+                    color: white;
+                }
+                
+                .sidebar a:hover:not(.active) 
+                {
+                    background-color: #555;
+                    color: white;
+                }
+                
+                div.content 
+                {
+                    margin-left: 200px;
+                    padding: 1px 16px;
+                    height: 1000px;
+                }
+                
+                @media screen and (max-width: 700px) 
+                {
+                    .sidebar 
+                    {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    }
+                    .sidebar a {float: left;}
+                    div.content {margin-left: 0;}
+                }
+                
+                @media screen and (max-width: 400px) 
+                {
+                    .sidebar a 
+                    {
+                    text-align: center;
+                    float: none;
+                    }
+                }
+              </style>
+        </head>
+        <body style= "background-color:rgb(0, 179, 30);">
+
+                <div class="sidebar">
+
+                        <a href=" https://nagyadam1.github.io/kollazs/" class="active"> HOME</a>
+
+                        <a href="https://nagyadam1.github.io/kollazs/Keplink.html">Keplink</a>
+
+                        <a href="https://nagyadam1.github.io/kollazs/orarend.html">Orarend</a>
+                        
+                        <a href="https://nagyadam1.github.io/kollazs/listak.html">Lista</a>
+                </div>
+                <div class="content">
+                    <h1>Házi feladat</h1>
+                    <h2>Nagy Ádám</h2>
+                    <h3>Nagy Ádám</h3>
+                    <h4>Nagy Ádám</h4>
+                    <h5>Nagy Ádám</h5>
+                    <h6>Nagy Ádám</h6>
+
+                    <p>Kollázs képem:</p>
+                    <img src="https://raw.githubusercontent.com/Nagyadam1/kollazs/main/243703126_905486960348620_6501121087500565811_n.jpg" alt=Kollázs title=Kollázs 		 width=500>
+                </div>
+            </body>
+    </html>
